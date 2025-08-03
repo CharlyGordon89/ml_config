@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ml-config
+Version: 0.1.0
+Summary: Reusable YAML + CLI config loader for ML projects
+Author: Ruslan Mamedov
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: omegaconf
+
+# ml-config
+
+**Reusable, scalable configuration loader for ML projects.**  
+Loads clean, versioned configs from YAML files and supports easy overrides via Python dictionaries, environment variables, or CLI arguments (extendable).
+
+---
+
+## ✅ Features
+
+- Load configuration from `.yaml` files
+- Merge CLI or Python overrides on top of base config
+- Structured access using dot notation (e.g., `config.parameters.seed`)
+- Useful for:
+  - Experiment tracking
+  - Hyperparameter tuning
+  - Cloud-friendly config management (via env vars later)
+
+---
+
+## 📦 Installation
+
+Install locally from the project root:
+
+```bash
+pip install -e .

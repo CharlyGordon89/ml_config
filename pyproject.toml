@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml_config"
+version = "0.1.0"
+description = "Reusable, scalable configuration loader for ML pipelines"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name="Ruslan Mamedov", email="mrv138@gmail.com" }
+]
+license = { text = "Proprietary" }
+
+dependencies = [
+  "omegaconf>=2.3.0",
+  "pydantic>=2.0.0",
+  "pyyaml>=6.0"
+]
